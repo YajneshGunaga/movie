@@ -4,7 +4,8 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #000000, #000000);
+    /* background: linear-gradient(to bottom, #3b3b3b, #000000); */
+    background-color: #000000;
 }
 
 a {
@@ -12,33 +13,218 @@ a {
 }
 
 .navbar {
-    height: 100px;
+    height: 50px;
     margin: 25px 25px 0 25px ;
     display: flex;
     align-items: center;
-    font-size: 50px;
-    font-family: 'Times New Roman';
-    font-weight: 600;
-    line-height: 100px;
     color: #ffffff;
     justify-content: space-between;
+   
 }
+
 
 .logo {
-    height: 100px;
+    height: 50px;
     display: flex;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    line-height: 50px;
 }
 
-.signin {
-    height: 50px;
-    width: 150px;
-    border-radius: 10px;
-    background-color: #bf4545;
+
+
+
+.menu {
+    flex: 1;
+    text-align: left;
+    margin-left: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: Arial;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
     color: #ffffff;
+    font-size: 20px;
+    font-family: Arial;
+}
+nav ul li a:hover {
+    color: #bf4545;
+}
+
+
+
+.searchbox {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.searchbox input {
+    height: 45px;
+    width: 300px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 0;
+    display: none;
+}
+.searchbox svg {
+    height: 45px;
+    width: 45px;
+    list-style: none;
+    display: inline-block;
+}
+.searchbox:hover input {
+    display: block;
+}
+
+
+
+.self {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+
+.self svg {
+    height: 45px;
+    width: 45px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    .navbar {
+        height: 35px;
+        margin: 15px 15px 0 15px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        justify-content: space-between;
+        background-color: #000000;
+    }
+    
+    .logo {
+        height: 35px;
+        display: flex;
+        font-size: 25px;
+        font-family: 'Times New Roman';
+        font-weight: 600;
+        line-height: 35px;
+    }
+    
+
+
+    .searchbox {
+        flex: 1;
+        display: flex;
+        justify-content: right;
+        cursor: pointer;
+    }
+    .searchbox input {
+        height: 35px;
+        width: 250px;
+        padding: 0px 10px;
+        border-radius: 10px;
+        margin-right: 10px;
+        border: 0;
+        display: none;
+    }
+    .searchbox svg {
+        height: 30px;
+        width: 30px;
+        list-style: none;
+        display: inline-block;
+    }
+    .searchbox:hover input {
+        display: block;
+    }
+    
+    
+
+
+    
+    .self {
+        display: flex;
+        text-align: right;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    } 
+    
+    .self svg {
+        height: 30px;
+        width: 30px;
+        list-style: none;
+        display: inline-block;
+        margin-left: 15px;
+    } 
+    
+    .menu-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+
+
+
+
+    
+    .menu {
+        width: 570px;
+        background-color: #bf4545;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        z-index: 2;
+    }
+
+    nav ul {
+        width: 130px;
+        margin-left: 425px;
+    }
+    
+    nav ul li {
+        width: 130px;
+        list-style: none;
+        display: block;
+        text-align: right;
+        margin-right: 10px;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+   
+    .menu {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+
+   
+   
 }
